@@ -133,6 +133,342 @@ public class Pollution {
     @JsonProperty("NightData")
     @JsonbProperty("NightData")
     private String nightData;
+    @ApiModelProperty("B 相电流 ")
+    @JsonProperty("100000-Ib")
+    @JsonbProperty("100000-Ib")
+    private String Ib;
+    @ApiModelProperty("A 相电流")
+    @JsonProperty("100000-Ia")
+    @JsonbProperty("100000-Ia")
+    private String Ia;
+    @ApiModelProperty("C 相电流")
+    @JsonProperty("100000-Ic")
+    @JsonbProperty("100000-Ic")
+    private String Ic;
+    @ApiModelProperty("A 相电压")
+    @JsonProperty("100000-Ua")
+    @JsonbProperty("100000-Ua")
+    private String Ua;
+    @ApiModelProperty("B 相电压")
+    @JsonProperty("100000-Ub")
+    @JsonbProperty("100000-Ub")
+    private String Ub;
+    @ApiModelProperty("C 相电压")
+    @JsonProperty("100000-Uc")
+    @JsonbProperty("100000-Uc")
+    private String Uc;
+    @ApiModelProperty("总有功功率")
+    @JsonProperty("100000-Pt")
+    @JsonbProperty("100000-Pt")
+    private String Pt;
+    @ApiModelProperty("A 相有功功率 ")
+    @JsonProperty("100000-Pa")
+    @JsonbProperty("100000-Pa")
+    private String Pa;
+    @ApiModelProperty("B 相有功功率")
+    @JsonProperty("100000-Pb")
+    @JsonbProperty("100000-Pb")
+    private String Pb;
+    @ApiModelProperty("C 相有功功率")
+    @JsonProperty("100000-Pc")
+    @JsonbProperty("100000-Pc")
+    private String Pc;
+    @ApiModelProperty("有功实时需量")
+    @JsonProperty("100000-Pdem")
+    @JsonbProperty("100000-Pdem")
+    private String Pdem;
+    @ApiModelProperty("总正向有功电能示值")
+    @JsonProperty("100000-Ept")
+    @JsonbProperty("100000-Ept")
+    private String Ept;
+    @ApiModelProperty("A 相正相有功电能示值 ")
+    @JsonProperty("100000-Epa")
+    @JsonbProperty("100000-Epa")
+    private String Epa;
+    @ApiModelProperty("B 相正相有功电能示值")
+    @JsonProperty("100000-Epb")
+    @JsonbProperty("100000-Epb")
+    private String Epb;
+    @ApiModelProperty("C 相正相有功电能示值")
+    @JsonProperty("100000-Epc")
+    @JsonbProperty("100000-Epc")
+    private String Epc;
+    @ApiModelProperty("第一象限无功电能示值")
+    @JsonProperty("100000-Eg1")
+    @JsonbProperty("100000-Eg1")
+    private String Eg1;
+    @ApiModelProperty("第二象限无功电能示值")
+    @JsonProperty("100000-Eg2")
+    @JsonbProperty("100000-Eg2")
+    private String Eg2;
+    @ApiModelProperty("第三象限无功电能示值")
+    @JsonProperty("100000-Eg3")
+    @JsonbProperty("100000-Eg3")
+    private String Eg3;
+    @ApiModelProperty("第四象限无功电能示值")
+    @JsonProperty("100000-Eg4")
+    @JsonbProperty("100000-Eg4")
+    private String Eg4;
+    @ApiModelProperty("A 相分钟平均有功功率")
+    @JsonProperty("100000-Pa_ave")
+    @JsonbProperty("100000-Pa_ave")
+    private String Pa_ave;
+    @ApiModelProperty("B 相分钟平均有功功率")
+    @JsonProperty("100000-Pb_ave")
+    @JsonbProperty("100000-Pb_ave")
+    private String Pb_ave;
+    @ApiModelProperty("C 相分钟平均有功功率")
+    @JsonProperty("100000-Pc_ave")
+    @JsonbProperty("100000-Pc_ave")
+    private String Pc_ave;
+    @ApiModelProperty("A 相温度")
+    @JsonProperty("100000-Tpa")
+    @JsonbProperty("100000-Tpa")
+    private String Tpa;
+    @ApiModelProperty("B 相温度")
+    @JsonProperty("100000-Tpb")
+    @JsonbProperty("100000-Tpb")
+    private String Tpb;
+    @ApiModelProperty("C 相温度")
+    @JsonProperty("100000-Tpc")
+    @JsonbProperty("100000-Tpc")
+    private String Tpc;
+    @ApiModelProperty("A 相功率角")
+    @JsonProperty("100000-Pga")
+    @JsonbProperty("100000-Pga")
+    private String Pga;
+    @ApiModelProperty("B 相功率角")
+    @JsonProperty("100000-Pgb")
+    @JsonbProperty("100000-Pgb")
+    private String Pgb;
+    @ApiModelProperty("C 相功率角")
+    @JsonProperty("100000-Pgc")
+    @JsonbProperty("100000-Pgc")
+    private String Pgc;
+
+    public String getIc() {
+        return Ic;
+    }
+
+    public void setIc(String ic) {
+        Ic = ic;
+    }
+
+    public String getUa() {
+        return Ua;
+    }
+
+    public void setUa(String ua) {
+        Ua = ua;
+    }
+
+    public String getUb() {
+        return Ub;
+    }
+
+    public void setUb(String ub) {
+        Ub = ub;
+    }
+
+    public String getUc() {
+        return Uc;
+    }
+
+    public void setUc(String uc) {
+        Uc = uc;
+    }
+
+    public String getPt() {
+        return Pt;
+    }
+
+    public void setPt(String pt) {
+        Pt = pt;
+    }
+
+    public String getPa() {
+        return Pa;
+    }
+
+    public void setPa(String pa) {
+        Pa = pa;
+    }
+
+    public String getPb() {
+        return Pb;
+    }
+
+    public void setPb(String pb) {
+        Pb = pb;
+    }
+
+    public String getPc() {
+        return Pc;
+    }
+
+    public void setPc(String pc) {
+        Pc = pc;
+    }
+
+    public String getPdem() {
+        return Pdem;
+    }
+
+    public void setPdem(String pdem) {
+        Pdem = pdem;
+    }
+
+    public String getEpt() {
+        return Ept;
+    }
+
+    public void setEpt(String ept) {
+        Ept = ept;
+    }
+
+    public String getEpa() {
+        return Epa;
+    }
+
+    public void setEpa(String epa) {
+        Epa = epa;
+    }
+
+    public String getEpb() {
+        return Epb;
+    }
+
+    public void setEpb(String epb) {
+        Epb = epb;
+    }
+
+    public String getEpc() {
+        return Epc;
+    }
+
+    public void setEpc(String epc) {
+        Epc = epc;
+    }
+
+    public String getEg1() {
+        return Eg1;
+    }
+
+    public void setEg1(String eg1) {
+        Eg1 = eg1;
+    }
+
+    public String getEg2() {
+        return Eg2;
+    }
+
+    public void setEg2(String eg2) {
+        Eg2 = eg2;
+    }
+
+    public String getEg3() {
+        return Eg3;
+    }
+
+    public void setEg3(String eg3) {
+        Eg3 = eg3;
+    }
+
+    public String getEg4() {
+        return Eg4;
+    }
+
+    public void setEg4(String eg4) {
+        Eg4 = eg4;
+    }
+
+    public String getPa_ave() {
+        return Pa_ave;
+    }
+
+    public void setPa_ave(String pa_ave) {
+        Pa_ave = pa_ave;
+    }
+
+    public String getPb_ave() {
+        return Pb_ave;
+    }
+
+    public void setPb_ave(String pb_ave) {
+        Pb_ave = pb_ave;
+    }
+
+    public String getPc_ave() {
+        return Pc_ave;
+    }
+
+    public void setPc_ave(String pc_ave) {
+        Pc_ave = pc_ave;
+    }
+
+    public String getTpa() {
+        return Tpa;
+    }
+
+    public void setTpa(String tpa) {
+        Tpa = tpa;
+    }
+
+    public String getTpb() {
+        return Tpb;
+    }
+
+    public void setTpb(String tpb) {
+        Tpb = tpb;
+    }
+
+    public String getTpc() {
+        return Tpc;
+    }
+
+    public void setTpc(String tpc) {
+        Tpc = tpc;
+    }
+
+    public String getPga() {
+        return Pga;
+    }
+
+    public void setPga(String pga) {
+        Pga = pga;
+    }
+
+    public String getPgb() {
+        return Pgb;
+    }
+
+    public void setPgb(String pgb) {
+        Pgb = pgb;
+    }
+
+    public String getPgc() {
+        return Pgc;
+    }
+
+    public void setPgc(String pgc) {
+        Pgc = pgc;
+    }
+
+    public String getIa() {
+        return Ia;
+    }
+
+    public void setIa(String ia) {
+        Ia = ia;
+    }
+
+    public String getIb() {
+        return Ib;
+    }
+
+    public void setIb(String ib) {
+        Ib = ib;
+    }
 
 
     public String getSampleTime() {

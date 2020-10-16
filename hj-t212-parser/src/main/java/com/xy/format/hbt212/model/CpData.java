@@ -153,7 +153,7 @@ public class CpData {
     @Max(value = 24, groups = VersionGroup.V2017.class)
     @JsonProperty("CTime")
     @JsonbProperty("CTime")
-    @JsonAlias({ "Ctime", "cTime" })
+    @JsonAlias({"Ctime", "cTime"})
     private Integer cTime;
 
     @Min(value = 0, groups = VersionGroup.V2017.class)
@@ -184,11 +184,11 @@ public class CpData {
 
     @JsonProperty("Pollution")
     @JsonbProperty("Pollution")
-    private Map<String,Pollution> pollution;
+    private Map<String, Pollution> pollution;
 
     @JsonProperty("Device")
     @JsonbProperty("Device")
-    private Map<String,Device> device;
+    private Map<String, Device> device;
 
     @JsonProperty("LiveSide")
     @JsonbProperty("LiveSide")
@@ -443,11 +443,11 @@ public class CpData {
         this.infoId = infoId;
     }
 
-    public Map<String,Device> getDevice() {
+    public Map<String, Device> getDevice() {
         return device;
     }
 
-    public void setDevice(Map<String,Device> device) {
+    public void setDevice(Map<String, Device> device) {
         this.device = device;
     }
 

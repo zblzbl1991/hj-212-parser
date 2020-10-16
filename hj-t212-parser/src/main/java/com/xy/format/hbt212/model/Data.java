@@ -79,6 +79,7 @@ public class Data {
     @JsonbProperty("CP")
     private CpData cp;
 
+
     public String getQn() {
         return qn;
     }
