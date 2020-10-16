@@ -2,6 +2,7 @@ package com.xy.format.hbt212.model.verify;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -48,10 +49,10 @@ import java.util.Set;
 public class T212Map<K,V>
         implements Map<K,V>, Serializable {
 
-    private Map<K,V> m;
+    private LinkedHashMap<K,V> m;
 
     public T212Map(Map<K, V> m) {
-        this.m = m;
+        this.m = (LinkedHashMap<K, V>) m;
     }
 
     @Deprecated
@@ -74,7 +75,7 @@ public class T212Map<K,V>
     }
 
     public static T212CpDataLevelMap createCpDataLevel(Map<String,Object> map) {
-        return new T212CpDataLevelMap(map);
+        return new T212CpDataLevelMap((LinkedHashMap)map);
     }
 
     @Override

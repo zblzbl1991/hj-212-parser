@@ -16,6 +16,7 @@ import com.xy.format.segment.exception.SegmentFormatException;
 import javax.validation.Validator;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static com.xy.format.hbt212.core.feature.VerifyFeature.DATA_LEN_RANGE;
@@ -62,6 +63,7 @@ public class DataSerializer
         generator.configured(segmentGeneratorConfigurator);
 
         Map<String,Object> map = convert(data);
+
         try {
             segmentSerializer.serialize(generator,map);
         } catch (SegmentFormatException e) {

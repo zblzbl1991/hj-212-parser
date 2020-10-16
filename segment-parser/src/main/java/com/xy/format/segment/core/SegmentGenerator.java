@@ -147,6 +147,7 @@ public class SegmentGenerator
         if(previousKeys.isEmpty() || previousKeys.size() == 1){
             nextToken = END_ENTRY;
         }else{
+
             nextToken = END_SUB_ENTRY;
         }
     }

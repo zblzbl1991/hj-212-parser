@@ -10,6 +10,7 @@ import com.xy.format.hbt212.model.verify.groups.ModeGroup;
 import com.xy.format.hbt212.model.verify.groups.VersionGroup;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -37,7 +38,7 @@ public class T212CpDataLevelMap
         extends T212Map<String,Object> {
 
     public T212CpDataLevelMap(Map<String, Object> m) {
-        super(m);
+        super((LinkedHashMap)m);
     }
 
     @SuppressWarnings("unchecked")

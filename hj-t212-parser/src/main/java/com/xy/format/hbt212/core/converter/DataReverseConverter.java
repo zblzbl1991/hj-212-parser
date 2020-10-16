@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xy.format.hbt212.base.Converter;
 import com.xy.format.hbt212.model.*;
 import com.xy.format.hbt212.model.verify.DataElement;
+import com.xy.format.hbt212.model.verify.T212CpDataLevelMap;
 import com.xy.format.hbt212.model.verify.T212Map;
 import com.xy.format.segment.base.cfger.Configurator;
 import com.xy.format.segment.base.cfger.Configured;
@@ -165,10 +166,11 @@ public class DataReverseConverter
 
         if(data.getCp() != null){
             Map<String,Object> cpMap = convertDataLevel(data.getCp());
+            map.remove(Data.CP);
             map.put(Data.CP,cpMap);
         }
-
-        return T212Map.createCpDataLevel(map);
+        T212CpDataLevelMap cpDataLevel = T212Map.createCpDataLevel(map);
+        return cpDataLevel;
     }
 
     @Override
