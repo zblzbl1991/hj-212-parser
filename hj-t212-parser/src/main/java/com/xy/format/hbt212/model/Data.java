@@ -24,7 +24,7 @@ public class Data {
 
 
     @ApiModelProperty(value = "请求编号", name = "QN")
-    @ValidDate(format = "yyyyMMddHHmmssSSS")
+//    @ValidDate(format = "yyyyMMddHHmmssSSS")
     @JsonProperty("QN")
     @JsonbProperty("QN")
     private String qn;

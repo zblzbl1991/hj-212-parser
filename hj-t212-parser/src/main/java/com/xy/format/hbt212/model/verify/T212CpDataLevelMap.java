@@ -38,7 +38,7 @@ public class T212CpDataLevelMap
         extends T212Map<String,Object> {
 
     public T212CpDataLevelMap(Map<String, Object> m) {
-        super((LinkedHashMap)m);
+        super(m);
     }
 
     @SuppressWarnings("unchecked")

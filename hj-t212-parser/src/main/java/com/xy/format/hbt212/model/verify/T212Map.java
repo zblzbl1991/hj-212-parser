@@ -49,10 +49,10 @@ import java.util.Set;
 public class T212Map<K,V>
         implements Map<K,V>, Serializable {
 
-    private LinkedHashMap<K,V> m;
+    private Map<K,V> m;
 
     public T212Map(Map<K, V> m) {
-        this.m = (LinkedHashMap<K, V>) m;
+        this.m = m;
     }
 
     @Deprecated
@@ -75,7 +75,7 @@ public class T212Map<K,V>
     }
 
     public static T212CpDataLevelMap createCpDataLevel(Map<String,Object> map) {
-        return new T212CpDataLevelMap((LinkedHashMap)map);
+        return new T212CpDataLevelMap(map);
     }
 
     @Override
