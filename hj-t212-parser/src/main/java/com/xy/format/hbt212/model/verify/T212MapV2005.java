@@ -16,8 +16,8 @@ import java.util.Map;
  * 解决无法对MAP进行验证定义问题
  * Created by xiaoyao9184 on 2018/1/10.
  */
-@FieldValidDate(field = "QN",
-        value = @ValidDate(format = "yyyyMMddHHmmssSSS"))
+//@FieldValidDate(field = "QN",
+//        value = @ValidDate(format = "yyyyMMddHHmmssSSS"))
 @FieldC(field = "ST",
         value = @C(len = 2))
 @FieldC(field = "CN",

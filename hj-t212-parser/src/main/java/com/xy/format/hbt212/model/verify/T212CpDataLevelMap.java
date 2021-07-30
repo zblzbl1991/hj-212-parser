@@ -18,8 +18,8 @@ import java.util.Map;
  * 解决无法对MAP进行验证定义问题
  * Created by xiaoyao9184 on 2018/1/10.
  */
-@FieldValidDate(field = "QN",
-        value = @ValidDate(format = "yyyyMMddHHmmssSSS"))
+//@FieldValidDate(field = "QN",
+//        value = @ValidDate(format = "yyyyMMddHHmmssSSS"))
 @FieldC(field = "ST",
         value = @C(len = 2))
 @FieldC(field = "CN",
@@ -51,8 +51,8 @@ public class T212CpDataLevelMap
     }
 
     //
-    @FieldValidDate(field = "SystemTime",
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = "SystemTime",
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
     @FieldN(field = "QnRtn",
             value = @N(integer = 3))
     @FieldN(field = "ExeRtn",
@@ -62,13 +62,13 @@ public class T212CpDataLevelMap
     @FieldN(field = "RtdInterval", groups = VersionGroup.V2017.class,
             value = @N(integer = 4, min = 30, max = 3600))
 
-    @FieldValidDate(field = "QN", groups = VersionGroup.V2005.class,
-            value = @ValidDate(format = "yyyyMMddHHmmssSSS"))
+//    @FieldValidDate(field = "QN", groups = VersionGroup.V2005.class,
+//            value = @ValidDate(format = "yyyyMMddHHmmssSSS"))
 
     @FieldN(field = "MinInterval", groups = VersionGroup.V2017.class,
             value = @N(integer = 2))
-    @FieldValidDate(field = "RestartTime", groups = VersionGroup.V2017.class,
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = "RestartTime", groups = VersionGroup.V2017.class,
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
 
 
     //污染物
@@ -100,8 +100,8 @@ public class T212CpDataLevelMap
     @FieldN(field = ".*-LowValue", regex = true, groups = VersionGroup.V2005.class,
             value = @N(integer = 14, fraction = 2))
 
-    @FieldValidDate(field = ".*-SampleTime", regex = true, groups = VersionGroup.V2017.class,
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = ".*-SampleTime", regex = true, groups = VersionGroup.V2017.class,
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
     @FieldC(field = ".*-EFlag", regex = true, groups = VersionGroup.V2017.class,
             value = @C(len = 4))
 
@@ -134,12 +134,12 @@ public class T212CpDataLevelMap
     //
     @FieldC(field = "PolId",
             value = @C(len = 6))
-    @FieldValidDate(field = "BeginTime",
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
-    @FieldValidDate(field = "EndTime",
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
-    @FieldValidDate(field = "DataTime",
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = "BeginTime",
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = "EndTime",
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = "DataTime",
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
     @FieldN(field = "OverTime", groups = VersionGroup.V2005.class,
             value = @N(integer = 5))
     @FieldN(field = "OverTime", groups = VersionGroup.V2017.class,
@@ -151,8 +151,8 @@ public class T212CpDataLevelMap
     @FieldN(field = "Ctime", groups = VersionGroup.V2017.class,
             value = @N(integer = 2, max = 24))
 
-    @FieldValidDate(field = "AlarmTime", groups = VersionGroup.V2005.class,
-            value = @ValidDate(format = "yyyyMMddHHmmss"))
+//    @FieldValidDate(field = "AlarmTime", groups = VersionGroup.V2005.class,
+//            value = @ValidDate(format = "yyyyMMddHHmmss"))
     @FieldN(field = "AlarmType", groups = VersionGroup.V2005.class,
             value = @N(integer = 1, min = 0, max = 1))
     @FieldN(field = "ReportTarget", groups = VersionGroup.V2005.class,
@@ -178,8 +178,8 @@ public class T212CpDataLevelMap
             value = @C(len = 6))
     @FieldN(field = "VaseNo", groups = VersionGroup.V2017.class,
             value = @N(integer = 2))
-    @FieldValidDate(field = "CstartTime", groups = VersionGroup.V2017.class,
-            value = @ValidDate(format = "HHmmss"))
+//    @FieldValidDate(field = "CstartTime", groups = VersionGroup.V2017.class,
+//            value = @ValidDate(format = "HHmmss"))
     @FieldN(field = "Stime", groups = VersionGroup.V2017.class,
             value = @N(integer = 4))
     @FieldC(field = "InfoId", groups = VersionGroup.V2017.class,

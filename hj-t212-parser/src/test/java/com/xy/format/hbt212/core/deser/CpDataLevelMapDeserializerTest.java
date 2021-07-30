@@ -92,7 +92,7 @@ public class CpDataLevelMapDeserializerTest {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        assert false;
+//        assert false;
     }
 
 }

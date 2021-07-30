@@ -26,7 +26,7 @@ public class T212MapEntry {
             DataElement.Group.MN.class,
             DataElement.Group.Flag.class
     })
-    @ValidDate(format = "yyyyMMddHHmmssSSS", groups = DataElement.Group.QN.class)
+//    @ValidDate(format = "yyyyMMddHHmmssSSS", groups = DataElement.Group.QN.class)
     @Max(value = 4, groups = DataElement.Group.PNUM.class)
     @Max(value = 4, groups = DataElement.Group.PNO.class)
     @Max(value = 2, groups = DataElement.Group.ST.class)
@@ -37,8 +37,8 @@ public class T212MapEntry {
     @Min(value = 1, groups = DataElement.Group.Flag.class)
     @Max(value = 960, groups = DataElement.Group.CP.class)
 
-    @ValidDate(format = "yyyyMMddHHmmss", groups = TypeGroup.YYYYMMDDhhmmss.class)
-    @ValidDate(format = "HHmmss", groups = TypeGroup.hhmmss.class)
+//    @ValidDate(format = "yyyyMMddHHmmss", groups = TypeGroup.YYYYMMDDhhmmss.class)
+//    @ValidDate(format = "HHmmss", groups = TypeGroup.hhmmss.class)
     @N(integer = 1, groups = TypeGroup.N1.class)
     @N(integer = 2, groups = TypeGroup.N2.class)
     @N(integer = 3, groups = TypeGroup.N3.class)

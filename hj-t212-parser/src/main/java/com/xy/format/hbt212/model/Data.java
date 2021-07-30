@@ -3,7 +3,6 @@ package com.xy.format.hbt212.model;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.xy.format.hbt212.core.validator.field.C;
-import com.xy.format.hbt212.core.validator.field.ValidDate;
 import com.xy.format.hbt212.model.verify.groups.ModeGroup;
 import com.xy.format.hbt212.model.verify.groups.VersionGroup;
 import io.swagger.annotations.ApiModelProperty;

@@ -85,7 +85,7 @@ public class T212Mapper {
         return this;
     }
 
-    public T212Mapper enableDefaultVerifyFeatures() {
+    public T212Mapper  enableDefaultVerifyFeatures() {
         verifyFeatures = verifyFeatures | Feature.collectFeatureDefaults(VerifyFeature.class);
         return this;
     }

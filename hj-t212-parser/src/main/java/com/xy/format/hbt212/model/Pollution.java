@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 public class Pollution {
 
     @ApiModelProperty(value = "污染物采样时间", name = "SampleTime")
-    @ValidDate(format = "yyyyMMddHHmmssSSS", groups = VersionGroup.V2017.class)
+//    @ValidDate(format = "yyyyMMddHHmmssSSS", groups = VersionGroup.V2017.class)
     @JsonProperty("SampleTime")
     @JsonbProperty("SampleTime")
     private String sampleTime;

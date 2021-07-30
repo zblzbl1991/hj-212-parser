@@ -25,12 +25,12 @@ public class CpData {
     public static String DEVICE = "Device";
     public static String POLLUTION = "Pollution";
 
-    @ValidDate(format = "yyyyMMddHHmmss")
+//    @ValidDate(format = "yyyyMMddHHmmss")
     @JsonProperty("SystemTime")
     @JsonbProperty("SystemTime")
     private String systemTime;
 
-    @ValidDate(format = "yyyyMMddHHmmssSSS", groups = VersionGroup.V2005.class)
+//    @ValidDate(format = "yyyyMMddHHmmssSSS", groups = VersionGroup.V2005.class)
     @JsonProperty("QN")
     @JsonbProperty("QN")
     private String qn;
@@ -57,12 +57,12 @@ public class CpData {
     @JsonbProperty("MinInterval")
     private Integer minInterval;
 
-    @ValidDate(format = "yyyyMMddHHmmss", groups = VersionGroup.V2017.class)
+//    @ValidDate(format = "yyyyMMddHHmmss", groups = VersionGroup.V2017.class)
     @JsonProperty("RestartTime")
     @JsonbProperty("RestartTime")
     private String restartTime;
 
-    @ValidDate(format = "yyyyMMddHHmmss", groups = VersionGroup.V2005.class)
+//    @ValidDate(format = "yyyyMMddHHmmss", groups = VersionGroup.V2005.class)
     @JsonbProperty("AlarmTime")
     @JsonProperty("AlarmTime")
     private String alarmTime;
@@ -82,17 +82,17 @@ public class CpData {
     @JsonProperty("PolId")
     private String polId;
 
-    @ValidDate(format = "yyyyMMddHHmmss")
+//    @ValidDate(format = "yyyyMMddHHmmss")
     @JsonProperty("BeginTime")
     @JsonbProperty("BeginTime")
     private String beginTime;
 
-    @ValidDate(format = "yyyyMMddHHmmss")
+//    @ValidDate(format = "yyyyMMddHHmmss")
     @JsonProperty("EndTime")
     @JsonbProperty("EndTime")
     private String endTime;
 
-    @ValidDate(format = "yyyyMMddHHmmss")
+//    @ValidDate(format = "yyyyMMddHHmmss")
     @JsonProperty("DataTime")
     @JsonbProperty("DataTime")
     private String dataTime;
@@ -162,7 +162,7 @@ public class CpData {
     @JsonbProperty("VaseNo")
     private Integer vaseNo;
 
-    @ValidDate(format = "HHmmss", groups = VersionGroup.V2017.class)
+//    @ValidDate(format = "HHmmss", groups = VersionGroup.V2017.class)
     @JsonProperty("CstartTime")
     @JsonbProperty("CstartTime")
     private String cStartTime;
